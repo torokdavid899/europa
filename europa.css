@@ -1,0 +1,212 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #D8DBBD;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.kiemeles {
+  font-weight: 550;
+  font-style: italic;
+}
+
+.oldal_kep {
+  width: 100%;
+  max-width: 20vw;
+  height: auto;
+  margin-bottom: 1.25em;
+}
+
+header {
+  background-color: #B59F78;
+  color: #FAF6E3;
+  padding: 1.25em;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+}
+
+@keyframes lenyilo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+header nav.menu {
+  display: none;
+  background-color: #2A3663;
+  color: #FAF6E3;
+  padding: 0.625em;
+  position: absolute;
+  top: 3.75em;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: lenyilo 1s ease-out forwards;
+}
+
+header nav.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav.menu ul li {
+  display: block;
+  margin-bottom: 0.625em;
+}
+
+header nav.menu ul li a {
+  color: #FAF6E3;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.625em;
+  display: block;
+}
+
+header .menu-toggle {
+  display: none;
+}
+
+header:hover nav.menu {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.25em;
+  padding: 1.25em;
+  margin: 0 auto;
+  padding: 0.625em;
+}
+
+.oldal {
+  display: flex;
+  gap: 1.25em;
+  padding: 1.25em;
+  margin: 0 auto;
+}
+
+.content,
+aside {
+  background-color: #FAF6E3;
+  padding: 1.25em;
+  border-radius: 0.625em;
+  box-shadow: 0 0 0.625em rgb(0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  background-color: #2A3663;
+  color: #FAF6E3;
+  padding: 0.625em;
+  width: 100%;
+  background: rgb(59, 74, 131);
+  background: linear-gradient(90deg, rgba(59, 74, 131, 1) 18%, rgba(46, 67, 145, 1) 70%, rgba(42, 54, 99, 1) 100%);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 48em) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header nav.menu {
+    position: static;
+    background-color: #2A3663;
+    width: 100%;
+  }
+
+  header nav.menu ul {
+    text-align: center;
+  }
+
+  header nav.menu ul li {
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  header nav.menu ul li a {
+    padding: 0.625em;
+    font-size: 1.125em;
+  }
+
+  header nav.menu ul li a:hover {
+    color: red;
+  }
+
+  .sticky {
+    position: relative;
+  }
+
+  .oldal_kep {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.menu ul li a:hover {
+  color: red;
+  transition: color 0.6s;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.allat_kep {
+  width: 20%;
+  border: 0.3125em solid #D8DBBD;
+  border-radius: 1em;
+  float: right;
+}
+
+.kep {
+  width: 25%;
+  border: 0.3125em solid #D8DBBD;
+  border-radius: 1m;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+::selection {
+  color: darkred;
+  background-color: #B59F78;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 0.125em solid #000000;
+  width: 24em;
+  float: left;
+}
+
+table td {
+  border: 0.125em solid #000000;
+  text-align: center;
+}
+
+table td img {
+  width: 2em;
+}
